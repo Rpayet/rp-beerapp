@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+    color: black;
+    
+}
+
+body {
+    background: linear-gradient(to bottom, #ffc425, #eaaa00);
+    height: 100vh;
+}
+
+#header {
+    
+    width: fit-content;
+    margin: .5em auto;
+
+    .title {
+
+        font-family: 'Bevan', cursive;
+        transform: skew(-0.02turn, -6deg);
+        font-size: 4em;
+
+    }
+}
+
+
+
+#search {
+
+    margin: 1em auto;
+
+    input {
+        width: 17em;
+        padding: 1em;
+    }
+
+    button {
+        padding: 1em 1.5em;
+        background-color: #e13e45;
+        border: none;
+        color: white;
+    }
+
+}
