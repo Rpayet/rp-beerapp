@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@
 
 body {
     background: linear-gradient(to bottom, #ffc425, #eaaa00);
-    height: 100vh;
+    
 }
 
 #main {
@@ -30,7 +31,7 @@ body {
         font-family: 'Bevan', cursive;
         transform: skew(-0.02turn, -6deg);
         font-size: 4em;
-
+        text-shadow: 1px 1px 2px #000000;
     }
 }
 
@@ -52,4 +53,41 @@ body {
         color: white;
     }
 
+}
+
+// $font-size-h2: 1em;
+
+.beerList {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2em;
+    margin-top: 2em;
+
+    .beerItem {
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: aliceblue;
+        border-top: 1em solid #e13e45;
+
+        h2 {
+            text-align: center;
+            padding: .5em;
+            // font-size: calc(#{$font-size-h2} * (1 + (100vw - 100%) / 100));
+            font-size: 1em;
+        }
+
+        img {
+            height: 80%;
+            margin: auto;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+
+
+    }
 }

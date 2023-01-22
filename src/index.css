@@ -9,7 +9,6 @@
 
 body {
   background: linear-gradient(to bottom, #ffc425, #eaaa00);
-  height: 100vh;
 }
 
 #main {
@@ -27,6 +26,7 @@ body {
   font-family: "Bevan", cursive;
   transform: skew(-0.02turn, -6deg);
   font-size: 4em;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 #search {
@@ -41,6 +41,33 @@ body {
   background-color: #e13e45;
   border: none;
   color: white;
+}
+
+.beerList {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 2em;
+  margin-top: 2em;
+}
+.beerList .beerItem {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  border-top: 1em solid #e13e45;
+}
+.beerList .beerItem h2 {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1em;
+}
+.beerList .beerItem img {
+  height: 80%;
+  margin: auto;
+}
+.beerList .beerItem:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=index.css.map */
