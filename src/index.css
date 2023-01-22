@@ -12,6 +12,13 @@ body {
   height: 100vh;
 }
 
+#main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 #header {
   width: fit-content;
   margin: 0.5em auto;
