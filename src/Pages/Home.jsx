@@ -2,6 +2,8 @@ import Search from '../Components/Search';
 import Beers from '../Components/Beers';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useParams } from "react-router-dom";
+
 
 function Home() {
     let [beers, setBeers] = useState([]);
@@ -19,7 +21,9 @@ function Home() {
         <Search/>
 
         <div className="beerList">
+
             {beers.map(beer => <Beers key={beer.id} beer={beer} />)}
+            
         </div>
         </>
     )
